@@ -1,0 +1,36 @@
+<html>
+    <head>
+        <script src="js/jquery.js"></script>
+        <script src="js/tabletop.js"></script>
+		<script src="js/newsquiz.js"></script>
+		<link href='http://fonts.googleapis.com/css?family=Droid+Serif:400,700' rel='stylesheet' type='text/css'>
+
+
+<!-- bootstrap.min.css is the barebones; bootstrap-responsive.css makes the quiz device-friendly -->      
+        <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+        <link href="css/bootstrap-responsive.css" rel="stylesheet" media="screen">
+		
+<!-- Custom stylesheet. Use this or create your own -->
+        <link href="css/style.css" rel="stylesheet" media="screen">
+    </head>
+    <body>
+		
+<!-- tabletop.js renders your spreadsheet data as HTML. Simply add a div below to wrap the whole thing -->
+		<div id="quiz_container"></div>
+        <script type="text/javascript">
+                var quiz = jQuery('#quiz_container').quiz('0AvW9Q_v2XAGTdElZbWd1T1AxRW1UeUxmdVJPSHlZMkE'); //your published spreadsheet key or URL goes here
+        </script>
+      
+<br><div class="addthis_toolbox addthis_default_style addthis_32x32_style"  style="width:468px;margin-left:10em">
+<a class="addthis_button_preferred_1"></a>
+<a class="addthis_button_preferred_2"></a>
+<a class="addthis_button_preferred_3"></a>
+<a class="addthis_button_preferred_4"></a>
+<a class="addthis_button_compact"></a>
+<a class="addthis_counter addthis_bubble_style"></a>
+</div>
+<script type="text/javascript">var addthis_config = {"data_track_addressbar":true};</script>
+<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=jean35"></script>
+<!-- AddThis Button END --><br><br>
+    </body>
+</html>

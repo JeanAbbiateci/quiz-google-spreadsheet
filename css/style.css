@@ -1,0 +1,242 @@
+
+
+.quiz_container {
+    list-style-type: none !important;
+    font-family: 'Droid Serif', serif;
+	color: #21252E;
+	width: 98%;
+	max-width:468px;
+	font-weight: none;
+	margin-left:20px;
+}
+
+/*fluid grid layout using twitter bootstrap */
+
+.row-fluid {
+	margin-left: 0 !important;
+}
+
+.col-12 {
+	padding: 1.25em;
+	padding-left:5em;
+	margin-top: .75em;
+	margin-left: 0 !important;
+}
+
+.col-12.question {
+	padding: 0;
+}
+
+/*additional custom styling*/
+
+.quiz_container .question_container {
+	margin: 1em 0em 6em ;
+}
+
+.quiz_container .question_container h1, .question p, .revealed_answer p {
+	line-height: 1.5em;	
+}
+
+.quiz_container .question .hint {
+	font-weight: bold;
+}
+
+.quiz_container .question_container h1 {
+	font-size: 1.4em;
+	font-color:#666;
+	margin: 0em 0em 1em 0em;
+	
+	font-style:none;
+}
+
+
+.quiz_container .question_container .title {
+
+	font-weight: normal;
+}
+
+.quiz_container .question p {
+	font-size: 1.1em;
+	max-height: 8em;
+}
+
+
+
+
+.quiz_container .possible_answers.col-12 {
+	padding: 0;
+	margin: 0;
+
+}
+
+.quiz_container .possible_answer {
+	background: rgba(254, 231, 88, 0.6);
+	margin-left: 0 !important;
+	border-radius: 2px;
+	list-style-type: none;
+
+
+	
+	cursor: pointer;
+	background-image : url("http://www.jeanabbiateci.fr/w.png");
+	background-position: 3% 50%;
+	background-repeat: no-repeat;
+	background-opacity:0.4;
+
+
+
+}
+
+.quiz_container .possible_answer:hover {
+	background: rgba(254, 231, 88, 0.9);
+	cursor: pointer;
+	color: #000;
+	background-image : url("http://www.jeanabbiateci.fr/w.png");
+	background-position: 3% 50%;
+	background-repeat: no-repeat;
+}
+
+.quiz_container li {
+	list-style-type: none !important;
+}
+
+/*more styling for answers*/
+
+.quiz_container .revealed_answer p {
+	font-size: 1.2em;
+	line-height: 1.5em;
+	padding: 0em 0 0 0;
+	margin: 0;
+	min-height: 3em;
+	font-weight: normal;
+
+}
+w
+.quiz_container .revealed_answer a {
+	color: #E64522;
+	border-bottom: 0 !important;
+}
+
+.quiz_container .revealed_answer a:hover {
+	opacity: .75;
+	text-decoration: none;
+}
+
+.quiz_container .correct_answer {
+	background-color: rgba(42,135,42, 0.5);
+	
+	cursor: pointer;
+	background-image : url("http://www.jeanabbiateci.fr/trueblack.png");
+	background-position: 3% 50%;
+	background-repeat: no-repeat;
+
+}
+	
+
+.quiz_container .wrong_answer {
+	background-color: rgba(153,11,8, 0.5);
+	
+	cursor: pointer;
+	background-image : url("http://www.jeanabbiateci.fr/wrongblack.png");
+	background-position: 3% 50%;
+	vertical-align:middle;
+	background-repeat: no-repeat;
+}
+
+
+.quiz_container .wrong_answer img{
+	height:20px;
+}
+
+
+.quiz_container .selected {
+    opacity: 1;
+	color: black;
+}
+
+.quiz_container .selected:hover, .correct_answer:hover, .wrong_answer:hover {
+	opacity: 1;
+}
+
+.quiz_container .hide {display: none;}
+
+.quiz_container .show {display: block;}
+
+.quiz_container .revealed_answer {
+	padding: 0;
+}
+
+#quiz_container .how_you_did {
+	text-align: left;
+	width:468px;
+	position:relative;
+	left:1em;
+	padding: 1em;
+	padding-left:2em;
+	padding-right:2em;
+	color:#fff;
+
+	background-color: rgba(153,11,8, 0.9);
+	font-weight: none;
+	font-size: 1.65em;
+	-webkit-box-shadow: 0px 7px 5px rgba(50, 50, 50, 0.65);
+	-moz-box-shadow:    0px 7px 5px rgba(50, 50, 50, 0.65);
+	box-shadow:         0px 7px 5px rgba(50, 50, 50, 0.65);
+}
+
+/*multimedia styling*/
+
+.quiz_container img, .quiz_container .youtube {
+	margin-bottom: 1em;
+	
+	max-height: 200px;
+}1
+
+.quiz_container .possible_answer img {
+	max-height: 24em;
+}
+
+.quiz_container .question img, .revealed_answer img, .selected img, .correct_answer img, .wrong_answer img {
+    max-height: 24em;
+    display: block;
+}
+
+.videoembed {
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 30px;
+    height: 0;
+    overflow: hidden;
+}
+
+.videoembed iframe, .videoembed object, .videoembed embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+}
+
+/* media queries */
+
+@media (max-width: 480px) {
+	.quiz_container li {
+		font-size: 1em !important;
+	}
+		
+	.quiz_container .question_container h1 {
+		font-family: 'Droid Serif', serif;
+
+		font-size: 1.25em;
+	}
+	
+	
+	.quiz_container .question img, .revealed_answer img {
+		display: none;
+
+	}
+
+	.quiz_container .question_container {
+		margin: 1em 0em 3.5em;
+	}
+}
